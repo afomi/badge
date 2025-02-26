@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Badge Creator - Create custom badges for your profile picture</title>
+    <title>Create your #ForThePublic badge</title>
     <link rel="stylesheet" href="overlay.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/png" href="example.png">
@@ -11,30 +11,30 @@
     <meta name="description" content="Enhance your LinkedIn profile with our easy-to-use web app. Personalize your profile picture with custom badges. Simple, privacy-focused, and free. Try it now!">
     <meta name="keywords" content="LinkedIn, profile badge, web app, custom badge, profile customization">
 
-    <meta property="og:url" content="https://badge.alexewerlof.com" />
+    <meta property="og:url" content="https://afomi.github.io/badge/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Profile Badge Creator - Create custom badges for your profile picture" />
-    <meta property="og:description" content="Create a custom badge for your LinkedIn profile for free" />
-    <meta property="og:image" content="https://badge.alexewerlof.com/example.png" />
+    <meta property="og:title" content="#ForThePublic badge" />
+    <meta property="og:description" content="Create your #ForThePublic badge." />
+    <meta property="og:image" content="https://afomi.github.io/badge/example.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@alexewerlof" />
-    <meta name="twitter:title" content="Profile Badge Creator - Create custom badges for your profile picture" />
-    <meta name="twitter:description" content="Create a custom badge for your LinkedIn profile for free" />
-    <meta name="twitter:image" content="https://badge.alexewerlof.com/example.png" />
+    <meta name="twitter:title" content="#ForThePublic badge" />
+    <meta name="twitter:description" content="Create your #ForThePublic badge." />
+    <meta name="twitter:image" content="https://afomi.github.io/badge/example.png" />
 </head>
 <body>
     <div id="app">
         <header>
-            <h1>Profile Badge Creator</h1>
+            <h1>#ForThePublic Badge Builder</h1>
             <p>
-                Stand out on LinkedIn with a custom badge on your profile picture.
+                Create your #ForThePublic badge.
             </p>
         </header>
         <main>
-            <label for="portrait-image-upload"><h2>1. Choose Portrait</h2></label>
+            <label for="portrait-image-upload"><h2>1. Choose Image</h2></label>
             <p>
-                Choose a picture that is in square aspect ratio (example: 500x500 pixels).
+                Choose an image that is in square aspect ratio (eg: 500x500 pixels).
             </p>
             <p>
                 The photo will not leave your browser.
@@ -63,11 +63,11 @@
                     <defs id="defs2">
                         <linearGradient id="overlay-circle-gradient">
                             <stop
-                            style="stop-color:#496fd8;stop-opacity:1;"
+                            style="stop-color:#0050D8;stop-opacity:1;"
                             offset="0"
                             id="left-bottom-stop" />
                             <stop
-                            style="stop-color:#000000;stop-opacity:0;"
+                            style="stop-color:#FFFFFF; stop-opacity:0;"
                             offset="1"
                             id="right-top-stop" />
                         </linearGradient>
@@ -93,40 +93,15 @@
                             <textPath
                                 xlink:href="#text-circle-path"
                                 startOffset="100%"
-                                style="fill: #EDF9EB"
-                                id="overlay-text-path">#For The Public</textPath>
+                                style="fill: #FFF;"
+                                id="overlay-text-path">#ForThePublic</textPath>
                         </text>
                     </g>
                 </svg>
             </div>
 
-            <label for="badge-text-input"><h2>2. Configure</h2></label>
-            <p>
-                You can use extra spaces in the end to center the text.
-            </p>
-            <input type="text" id="badge-text-input" maxlength="20" value="#CREATING">
-
-            <p>
-                You can drag your mouse on the color selector for a live preview of the colors.
-            </p>
-            <p>
-                <input type="color" id="badge-bg-color-input" value="#446E2E">
-                <label for="badge-bg-color-input">Background</label>
-            </p>
-            <p>
-                <input type="color" id="badge-text-color-input" value="#EDF9EB">
-                <label for="badge-text-color-input">Text</label>
-            </p>
-
-            <h2>3. Save the file</h2>
+            <h2>2. Download</h2>
             <button id="download-button" type="button">↧ Download</button>
-            <h2>4. Update your profile</h2>
-            <p>
-                🔗
-                <a href="https://www.linkedin.com/help/linkedin/answer/a541850/add-change-edit-or-delete-your-linkedin-profile-photo" target="_blank">
-                    How to change your LinkedIn profile
-                </a>
-            </p>
         </main>
     </div>
 
@@ -136,20 +111,10 @@
 
     <footer>
         <p>
-            This app is completely free and
-            <a href="https://github.com/alexewerlof/badge" target="_blank">open source</a>.
-        </p>
-        <p>
-            If you want to support me, you can subscribe to
-            <a href="https://blog.alexewerlof.com/subscribe" target="_blank">my newsletter</a>
-            about technical leadership, software reliability, and growth.
-            This also gives you access to my book
-            <a href="https://blog.alexewerlof.com/p/rem" target="_blank">
-                Reliability Engineering Mindset
-            </a>
-        </p>
-        <p>
-            🇸🇪 Made in Sweden by <a href="https://alexewerlof.com/" target="_blank">Alex Ewerlöf</a>
+            This code is
+            <a href="https://github.com/afomi/badge" target="_blank">open source</a>,
+            forked from <a href="https://alexewerlof.com/" target="_blank">Alex Ewerlöf</a>'s
+            <a href="https://github.com/alexewerlof/badge" target="_blank">Badge</a>.
         </p>
     </footer>
     <script src="index.js"></script>

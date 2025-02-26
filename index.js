@@ -53,7 +53,7 @@ async function draw() {
 
     const image = await imageWithLoadedSrc(imagePreview.src)
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
- 
+
     const svgStr = getSvgString(getById('overlay-svg'));
 
     const svgImage = await imageWithLoadedSrc('data:image/svg+xml;base64,' + btoa(svgStr))
@@ -77,20 +77,6 @@ getById('portrait-image-upload').addEventListener('change', function(event) {
     }
     reader.readAsDataURL(event.target.files[0])
 })
-
-getById('badge-text-input').addEventListener('input', () => {
-    getById('overlay-text-path').innerHTML = sanitizeHTML(getById('badge-text-input').value);
-});
-
-getById('badge-bg-color-input').addEventListener('input', () => {
-    const badgeColor = getById('badge-bg-color-input').value;
-    getById('left-bottom-stop').style.stopColor = badgeColor;
-});
-
-getById('badge-text-color-input').addEventListener('input', () => {
-    const badgeTextColor = getById('badge-text-color-input').value;
-    getById('overlay-text-path').style.fill = badgeTextColor;
-});
 
 getById('upload-button').addEventListener('click', () => {
     getById('portrait-image-upload').click();
