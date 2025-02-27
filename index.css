@@ -8,6 +8,7 @@
     --bg-light-color: #001B33;
     --bg-dark-color: #000C17;
     --primary-color: #0050D8;
+    --muted-color: #999999;
     --text-color: #030303;
     --border-radius: 0.8em;
 }
@@ -88,6 +89,7 @@ footer {
     margin: 0 auto 1em auto;
     text-align: center;
     max-width: var(--max-width);
+    color: var(--muted-color);
 }
 
 #image-preview {
